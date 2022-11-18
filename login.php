@@ -47,7 +47,7 @@ if (isset($_POST['submit'])) {
 </head>
 <body>
     <!-- top header -->
-    <div class="container-fluid py-2 top-header" id="top">
+    <div class=" py-2 top-header" id="top">
         <div class="d-flex justify-content-between">
             <div class="social-icons px-5">
                 <i class="fab fa-facebook"></i>
@@ -70,39 +70,40 @@ if (isset($_POST['submit'])) {
     <!-- navigation menu -->
     <nav class="navbar navbar-expand-lg navbar-light py-3 menu">
         <div class="container-fluid">
-          <a class="navbar-brand px-4" href="#">
-            <!-- <img src="assets/img/LOGO.png" alt=""> -->
+          <a class="navbar-brand px-1" href="index.php">
+            <img src="assets/img/phasy.png" alt="" id="logo">
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto px-5">
-              <li class="nav-item px-4">
+            <ul class="navbar-nav">
+              <li class="nav-item px-1">
                 <a class="nav-link active" aria-current="page" href="index.php">HOME</a>
               </li>
-              <li class="nav-item px-2">
-                <a class="nav-link" href="question.php">BROWSE QUESTIONS</a>
+              <li class="nav-item px-1">
+                <a class="nav-link" href="question.php">QUESTIONS</a>
               </li>
-              <li class="nav-item px-2">
+              <li class="nav-item px-1">
                 <a class="nav-link" href="index.php#services">SERVICES</a>
               </li>
-              <li class="nav-item px-2">
+              <li class="nav-item px-1">
                 <a class="nav-link" href="index.php#prices">PRICES</a>
               </li>
-              <li class="nav-item px-2">
+              <li class="nav-item px-1">
                 <a class="nav-link" href="index.php#contact">CONTACT</a>
               </li>
-              <li class="nav-item px-2">
+              <li class="nav-item ps-2">
                 <a class="nav-link" href="login.php" id="login">LOGIN</a>
               </li>
-              <li class="nav-item px-2">
+              <li class="nav-item">
                 <a class="nav-link" href="signup.php" id="login">Signup</a>
               </li>
             </ul>
           </div>
         </div>
       </nav>
+      <div class="container">
 <!-- form section -->
 <form action="login.php" name="signup" method="post" onsubmit="return form_val()">
 <div class="regform">
@@ -116,25 +117,26 @@ if (isset($_POST['submit'])) {
     <p>N0 account yet ?   <span><a href="signup.php">Signup</a></span></p>
     </div>
 </form>
+</div>
 <!-- footer section -->
-<div class="container-fluid footer">
+<div class="footer">
         <div class="row">
-            <div class="col-sm-3">
-                
+            <div class="col-md-3">
+                <img src="assets/img/phasy.png" alt="" class="img-fluid">
             </div>
-            <div class="col-sm-3">
+            <div class="col-md-3">
                 <h5>Legal</h5>
                 <a href="#">PRIVACY AND COOKIES</a>
                 <a href="#">TERMS OF USE</a>
                 <a href="#">TRADEMARK</a>
             </div>
-            <div class="col-sm-3">
+            <div class="col-md-3">
                 <h5>Information</h5>
                 <a href="#">SUPPORT</a>
                 <a href="#">BLOG</a>
                 <a href="#">NEWSLETTER</a>
             </div>
-            <div class="col-sm-3">
+            <div class="col-md-3">
                 <h5>Newsletter</h5>
                 <form action="">
                     <div class="input-group">
@@ -145,9 +147,15 @@ if (isset($_POST['submit'])) {
             </div>
         </div>
       </div>
-      <div class="container-fluid copy-right">
-        <p>&copy phasy 2022</p>
+      <div class="copy-right">
+        <div class="row">
+      <div class="col-6">
+      <p>&copy phasy 2022</p>
+</div>
+<div class="col-6">
        <a href="#top"> <i class="fa fa-arrow-circle-up"></i> </a>
+       </div>
+       </div>
       </div>
    <!-- bootstrap script -->
    <script src="assets/js/bootstrap.bundle.min.js"></script>

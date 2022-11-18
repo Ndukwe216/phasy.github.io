@@ -40,6 +40,7 @@ if (!isset($_SESSION['email'])) {
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/img/phasy.png" type="image/x-icon">
      <!-- bootstrap styleseet -->
      <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <!-- custom stylesheet -->
@@ -73,30 +74,30 @@ if (!isset($_SESSION['email'])) {
     <!-- navigation menu -->
     <nav class="navbar navbar-expand-lg navbar-light py-3 menu">
         <div class="container-fluid">
-          <a class="navbar-brand px-4" href="#">
-            <!-- <img src="assets/img/LOGO.png" alt=""> -->
+          <a class="navbar-brand px-1" href="#">
+            <img src="assets/img/phasy.png" alt="" id="logo">
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto px-5">
-              <li class="nav-item px-4">
+              <li class="nav-item px-1">
                 <a class="nav-link active" aria-current="page" href="index.php">HOME</a>
               </li>
-              <li class="nav-item px-4">
-                <a class="nav-link" href="question.php">BROWSE QUESTIONS</a>
+              <li class="nav-item px-1">
+                <a class="nav-link" href="question.php">QUESTIONS</a>
               </li>
-              <li class="nav-item px-4">
+              <li class="nav-item px-1">
                 <a class="nav-link" href="#services">SERVICES</a>
               </li>
-              <li class="nav-item px-4">
+              <li class="nav-item px-1">
                 <a class="nav-link" href="#prices">PRICES</a>
               </li>
-              <li class="nav-item px-4">
+              <li class="nav-item px-1">
                 <a class="nav-link" href="#contact">CONTACT</a>
               </li>
-              <li class="nav-item px-4">
+              <li class="nav-item ps-4">
                 <a class="nav-link" href="logout.php" id="login">logout</a>
               </li>
             </ul>
@@ -165,6 +166,45 @@ if (!isset($_SESSION['email'])) {
                 </form>
             </div>
         </div>
+      </div>
+      <!-- footer section -->
+      <div class="footer">
+        <div class="row">
+            <div class="col-md-3">
+                <img src="assets/img/phasy.png" alt="" class="img-fluid">
+            </div>
+            <div class="col-md-3">
+                <h5>Legal</h5>
+                <a href="#">PRIVACY AND COOKIES</a>
+                <a href="#">TERMS OF USE</a>
+                <a href="#">TRADEMARK</a>
+            </div>
+            <div class="col-md-3">
+                <h5>Information</h5>
+                <a href="#">SUPPORT</a>
+                <a href="#">BLOG</a>
+                <a href="#">NEWSLETTER</a>
+            </div>
+            <div class="col-md-3">
+                <h5>Newsletter</h5>
+                <form action="">
+                    <div class="input-group">
+                        <input type="text" class="form-control">
+                        <button class="input-group-text">Subscribe</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+      </div>
+      <div class="copy-right">
+        <div class="row">
+      <div class="col-6">
+      <p>&copy phasy 2022</p>
+</div>
+<div class="col-6">
+       <a href="#top"> <i class="fa fa-arrow-circle-up"></i> </a>
+       </div>
+       </div>
       </div>
       <script src="assets/js/bootstrap.bundle.min.js"></script>
     <!-- custom script -->

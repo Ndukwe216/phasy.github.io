@@ -120,24 +120,24 @@ if (isset($_POST['submit'])) {
     </div>
 </form>
 <!-- footer section -->
-<div class="container-fluid footer">
+<div class="footer">
         <div class="row">
-            <div class="col-sm-3">
-                
+            <div class="col-md-3">
+                <img src="assets/img/phasy.png" alt="" class="img-fluid">
             </div>
-            <div class="col-sm-3">
+            <div class="col-md-3">
                 <h5>Legal</h5>
                 <a href="#">PRIVACY AND COOKIES</a>
                 <a href="#">TERMS OF USE</a>
                 <a href="#">TRADEMARK</a>
             </div>
-            <div class="col-sm-3">
+            <div class="col-md-3">
                 <h5>Information</h5>
                 <a href="#">SUPPORT</a>
                 <a href="#">BLOG</a>
                 <a href="#">NEWSLETTER</a>
             </div>
-            <div class="col-sm-3">
+            <div class="col-md-3">
                 <h5>Newsletter</h5>
                 <form action="">
                     <div class="input-group">
@@ -148,9 +148,15 @@ if (isset($_POST['submit'])) {
             </div>
         </div>
       </div>
-      <div class="container-fluid copy-right">
-        <p>&copy phasy 2022</p>
+      <div class="copy-right">
+        <div class="row">
+      <div class="col-6">
+      <p>&copy phasy 2022</p>
+</div>
+<div class="col-6">
        <a href="#top"> <i class="fa fa-arrow-circle-up"></i> </a>
+       </div>
+       </div>
       </div>
    <!-- bootstrap script -->
    <script src="assets/js/bootstrap.bundle.min.js"></script>
