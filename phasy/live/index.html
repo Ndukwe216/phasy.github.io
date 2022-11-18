@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>interview room</title>
+</head>
+<body>
+    <script>
+        var script = document.createElement("script");
+        script.type = "text/javascript";
+      
+        script.addEventListener("load", function (event) {
+          const config = {
+            name: "",
+            meetingId: "phasy",
+            apiKey: "560552cd-97df-4dad-ac98-2afc5f69e2cf",
+      
+            containerId: null,
+            theme: "DARK",
+            whiteboardEnabled: true,
+      
+            micEnabled: true,
+            webcamEnabled: false,
+            participantCanToggleSelfWebcam:false,
+            participantCanToggleSelfMic: true,
+      
+            chatEnabled: true,
+            screenShareEnabled: true,
+      
+            joinScreen: {
+                 visible: true,
+                 title: "Live mock interview",
+                 meetingUrl: "localhost/phasy/live",
+             },
+             waitingScreen: {
+                text: "Connecting to the meeting...",
+  },
+              branding: {
+                enabled: true,
+               logoURL: "https://www.linkpicture.com/q/phasy.jpeg",
+                name: "phasy",
+                poweredBy: false,
+                
+              },
+              permissions: {
+                askToJoin: false,
+                endMeeting: true,
+                participantCanLeave: true,
+                toggleParticipantWebcam: false,
+                toggleParticipantMic: false,
+                toggleParticipantScreenshare: false,
+                drawOnWhiteboard: true,
+                toggleWhiteboard: true,
+                pin:true,
+                removeParticipant: true,
+                changeLayout: true,
+              },
+              layout: {
+                  type: "SIDEBAR", 
+                  priority: "PIN", 
+                   gridSize: 3,
+                },
+          };
+      
+          const meeting = new VideoSDKMeeting();
+          meeting.init(config);
+        });
+      
+        script.src =
+          "https://sdk.videosdk.live/rtc-js-prebuilt/0.3.22/rtc-js-prebuilt.js";
+        document.getElementsByTagName("head")[0].appendChild(script);
+      </script>
+</body>
+</html>
