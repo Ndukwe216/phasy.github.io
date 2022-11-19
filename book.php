@@ -19,7 +19,7 @@ if (!isset($_SESSION['email'])) {
         if (empty($language) || empty($area)) {
             echo "please fill the form";
         }else{
-            $book_sql = "insert into `booking`(language,area)values('$new','$area')";
+            $book_sql = "insert into `booking`(language,area,date)values('$new','$area', Now())";
             $booking_result = mysqli_query($con,$book_sql);
             if ($booking_result) {
                 mail("$email","$subject","$msg");
