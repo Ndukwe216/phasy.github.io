@@ -49,9 +49,7 @@
               <li class="nav-item px-4">
                 <a class="nav-link active" aria-current="page" href="#">HOME</a>
               </li>
-              <li class="nav-item px-1">
-                <a class="nav-link" href="question.php">QUESTIONS</a>
-              </li>
+             
               <li class="nav-item px-1">
                 <a class="nav-link" href="#services">SERVICES</a>
               </li>
@@ -60,6 +58,9 @@
               </li>
               <li class="nav-item px-1">
                 <a class="nav-link" href="#contact">CONTACT</a>
+              </li>
+              <li class="nav-item px-1">
+                <a class="nav-link" href="question.php">QUESTIONS</a>
               </li>
               <li class="nav-item ps-4">
                 <a class="nav-link" href="book.php" id="login">BOOK</a>
@@ -73,7 +74,7 @@
         <h1>Take your interview session to the next<br> level with PHASY</h1>
         <p>Phasy transform your interview session into a walk in the park, letting you have an edge over the interviewer.<br> Stay in the know on the current interview trend and pattern as the happen, and get your job in the first interview.
         </p>
-        <a href="login.php" class="btn">GET STARTED</a>
+        <a href="book.php" class="btn">GET STARTED</a>
       </div>
       <div class="container services reveal fade-bottom" id="services">
         <h2>OUR SERVICES</h2>
@@ -122,7 +123,7 @@
                 We prepare you to smash the interview and get hired for your desired job by connecting you to senior engineers who interview and also give you feed back on what to do to get the job. 
                 Understanding the pattern of the industry interviews, will help you get the job in one interview. 
             </P>
-            <a href="login.php" class="btn">BOOK SESSION</a>
+            <a href="book.php" class="btn">BOOK SESSION</a>
         </div>
         </div>
             </div>
